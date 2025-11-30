@@ -36,12 +36,12 @@
             maskedTextBox1 = new MaskedTextBox();
             textBoxOutPut_KRV = new TextBox();
             groupBoxInPut_KRV = new GroupBox();
+            textBoxInPut_KRV = new TextBox();
             textBoxX_KRV = new TextBox();
             groupBoxOutPut_KRV = new GroupBox();
             textBoxRes_KRV = new TextBox();
             buttonStart_KRV = new Button();
             buttoninfo_KRV = new Button();
-            textBoxInPut_KRV = new TextBox();
             groupBoxTask_KRV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormuls_KRV).BeginInit();
             groupBoxInPut_KRV.SuspendLayout();
@@ -106,6 +106,14 @@
             groupBoxInPut_KRV.TabStop = false;
             groupBoxInPut_KRV.Text = "Ввод данных:";
             // 
+            // textBoxInPut_KRV
+            // 
+            textBoxInPut_KRV.Location = new Point(9, 70);
+            textBoxInPut_KRV.Name = "textBoxInPut_KRV";
+            textBoxInPut_KRV.Size = new Size(266, 23);
+            textBoxInPut_KRV.TabIndex = 6;
+            textBoxInPut_KRV.KeyPress += textBoxInPut_KRV_KeyPress;
+            // 
             // textBoxX_KRV
             // 
             textBoxX_KRV.Location = new Point(6, 29);
@@ -157,14 +165,6 @@
             buttoninfo_KRV.UseVisualStyleBackColor = true;
             buttoninfo_KRV.Click += buttoninfo_KRV_Click;
             // 
-            // textBoxInPut_KRV
-            // 
-            textBoxInPut_KRV.Location = new Point(9, 70);
-            textBoxInPut_KRV.Name = "textBoxInPut_KRV";
-            textBoxInPut_KRV.Size = new Size(266, 23);
-            textBoxInPut_KRV.TabIndex = 6;
-            textBoxInPut_KRV.KeyPress += textBoxInPut_KRV_KeyPress;
-            // 
             // Formmain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -180,7 +180,7 @@
             MaximizeBox = false;
             Name = "Formmain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 0 | Вариант 9 | Колганенко Р.В.";
+            Text = "c";
             Load += Formmain_Load;
             groupBoxTask_KRV.ResumeLayout(false);
             groupBoxTask_KRV.PerformLayout();

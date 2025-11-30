@@ -42,7 +42,7 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task0.V9
                     e.Handled = true;
                 }
 
-            }
+        }
             private void buttoninfo_KRV_Click(object sender, EventArgs e)
             {
                 MessageBox.Show("Таск 0 выполнил студент группы ИБКСб-25-1 Колганенко Ринат Витальевич", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);

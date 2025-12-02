@@ -31,6 +31,8 @@
             groupBoxTask_KRV = new GroupBox();
             textBoxTask_KRV = new TextBox();
             groupBox2 = new GroupBox();
+            textBoxPutEnd_KRV = new TextBox();
+            textBoxPutStart_KRV = new TextBox();
             TexBoxEnd_KRV = new TextBox();
             textBoxStart_KRV = new TextBox();
             groupBoxRes_KRV = new GroupBox();
@@ -38,8 +40,6 @@
             textBoxRes_KRV = new TextBox();
             buttoninfo_KRV = new Button();
             buttonStart_KRV = new Button();
-            textBoxPutStart_KRV = new TextBox();
-            textBoxPutEnd_KRV = new TextBox();
             groupBoxTask_KRV.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBoxRes_KRV.SuspendLayout();
@@ -79,6 +79,22 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Ввод данных:";
+            // 
+            // textBoxPutEnd_KRV
+            // 
+            textBoxPutEnd_KRV.Location = new Point(151, 75);
+            textBoxPutEnd_KRV.Multiline = true;
+            textBoxPutEnd_KRV.Name = "textBoxPutEnd_KRV";
+            textBoxPutEnd_KRV.Size = new Size(126, 30);
+            textBoxPutEnd_KRV.TabIndex = 5;
+            // 
+            // textBoxPutStart_KRV
+            // 
+            textBoxPutStart_KRV.Location = new Point(9, 73);
+            textBoxPutStart_KRV.Multiline = true;
+            textBoxPutStart_KRV.Name = "textBoxPutStart_KRV";
+            textBoxPutStart_KRV.Size = new Size(116, 39);
+            textBoxPutStart_KRV.TabIndex = 4;
             // 
             // TexBoxEnd_KRV
             // 
@@ -120,6 +136,7 @@
             textBoxResult_KRV.ReadOnly = true;
             textBoxResult_KRV.Size = new Size(264, 372);
             textBoxResult_KRV.TabIndex = 1;
+            textBoxResult_KRV.TextChanged += textBoxResult_KRV_TextChanged;
             // 
             // textBoxRes_KRV
             // 
@@ -149,22 +166,6 @@
             buttonStart_KRV.Text = "Выполнить";
             buttonStart_KRV.UseVisualStyleBackColor = true;
             buttonStart_KRV.Click += buttonStart_KRV_Click;
-            // 
-            // textBoxPutStart_KRV
-            // 
-            textBoxPutStart_KRV.Location = new Point(9, 73);
-            textBoxPutStart_KRV.Multiline = true;
-            textBoxPutStart_KRV.Name = "textBoxPutStart_KRV";
-            textBoxPutStart_KRV.Size = new Size(116, 39);
-            textBoxPutStart_KRV.TabIndex = 4;
-            // 
-            // textBoxPutEnd_KRV
-            // 
-            textBoxPutEnd_KRV.Location = new Point(151, 75);
-            textBoxPutEnd_KRV.Multiline = true;
-            textBoxPutEnd_KRV.Name = "textBoxPutEnd_KRV";
-            textBoxPutEnd_KRV.Size = new Size(126, 30);
-            textBoxPutEnd_KRV.TabIndex = 5;
             // 
             // FormMain
             // 

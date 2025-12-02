@@ -29,7 +29,7 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task1.V13
             try
             {
                 int startStep = Convert.ToInt32(textBoxPutStart_KRV.Text);
-                int stopStep = Convert.ToInt32(textBoxPutStart_KRV.Text);
+                int stopStep = Convert.ToInt32(textBoxPutEnd_KRV.Text);
 
                 string strLine;
 
@@ -45,7 +45,7 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task1.V13
                 textBoxResult_KRV.AppendText("+----------+----------+" + Environment.NewLine);
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    strLine = String.Format("|{0,5:d}          |  {1, 5:f2}   |", startStep, valueArray[i]);
+                    strLine = String.Format("|{0,5:d}     |   {1, 5:f2}  |", startStep, valueArray[i]);
                     textBoxResult_KRV.AppendText(strLine + Environment.NewLine);
                     startStep++;
 
@@ -71,9 +71,14 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task1.V13
 
         }
 
-       
+
 
         private void textBoxTask_KRV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxResult_KRV_TextChanged(object sender, EventArgs e)
         {
 
         }

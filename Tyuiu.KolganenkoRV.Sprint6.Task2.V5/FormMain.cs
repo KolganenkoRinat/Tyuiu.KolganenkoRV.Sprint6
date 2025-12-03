@@ -24,12 +24,12 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task2.V5
 
                 valueArray = ds.GetMassFunction(startStep, stopStep);
 
-                
+
 
                 for (int i = 0; i <= len - 1; i++)
                 {
                     this.dataGridViewFunction_KRV.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
-                    
+
                     startStep++;
 
                 }
@@ -37,13 +37,18 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task2.V5
 
             catch
             {
-                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buttoninfo_KRV_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 1 выполнил студент группы ИБКСб-25-1 Колганенко Ринат Витальевич", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void groupBoxOutPut_KRV_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

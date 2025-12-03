@@ -36,11 +36,11 @@
             buttoninfo_KRV = new Button();
             buttonStart_KRV = new Button();
             groupBoxTask_KRV = new GroupBox();
-            groupBoxInPut_KRV = new GroupBox();
-            groupBoxOutPut_KRV = new GroupBox();
             textBoxTask_KRV = new TextBox();
-            textBoxStr_KRV = new TextBox();
+            groupBoxInPut_KRV = new GroupBox();
             textBoxStp_KRV = new TextBox();
+            textBoxStr_KRV = new TextBox();
+            groupBoxOutPut_KRV = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewFunction_KRV).BeginInit();
             groupBoxTask_KRV.SuspendLayout();
             groupBoxInPut_KRV.SuspendLayout();
@@ -113,6 +113,16 @@
             groupBoxTask_KRV.TabStop = false;
             groupBoxTask_KRV.Text = "Условие";
             // 
+            // textBoxTask_KRV
+            // 
+            textBoxTask_KRV.Location = new Point(5, 23);
+            textBoxTask_KRV.Multiline = true;
+            textBoxTask_KRV.Name = "textBoxTask_KRV";
+            textBoxTask_KRV.ReadOnly = true;
+            textBoxTask_KRV.Size = new Size(472, 66);
+            textBoxTask_KRV.TabIndex = 0;
+            textBoxTask_KRV.Text = "Протабулировать функцию на заданном диапазоне.  Результат вывести в DataGridView и построить график функции.";
+            // 
             // groupBoxInPut_KRV
             // 
             groupBoxInPut_KRV.Controls.Add(textBoxStp_KRV);
@@ -126,25 +136,15 @@
             groupBoxInPut_KRV.TabStop = false;
             groupBoxInPut_KRV.Text = "Ввод данных:";
             // 
-            // groupBoxOutPut_KRV
+            // textBoxStp_KRV
             // 
-            groupBoxOutPut_KRV.Controls.Add(dataGridViewFunction_KRV);
-            groupBoxOutPut_KRV.Location = new Point(524, 8);
-            groupBoxOutPut_KRV.Name = "groupBoxOutPut_KRV";
-            groupBoxOutPut_KRV.Size = new Size(597, 329);
-            groupBoxOutPut_KRV.TabIndex = 7;
-            groupBoxOutPut_KRV.TabStop = false;
-            groupBoxOutPut_KRV.Text = "Вывод данных:";
-            // 
-            // textBoxTask_KRV
-            // 
-            textBoxTask_KRV.Location = new Point(5, 23);
-            textBoxTask_KRV.Multiline = true;
-            textBoxTask_KRV.Name = "textBoxTask_KRV";
-            textBoxTask_KRV.ReadOnly = true;
-            textBoxTask_KRV.Size = new Size(472, 66);
-            textBoxTask_KRV.TabIndex = 0;
-            textBoxTask_KRV.Text = "Протабулировать функцию на заданном диапазоне.  Результат вывести в DataGridView и построить график функции.";
+            textBoxStp_KRV.Location = new Point(188, 22);
+            textBoxStp_KRV.Multiline = true;
+            textBoxStp_KRV.Name = "textBoxStp_KRV";
+            textBoxStp_KRV.ReadOnly = true;
+            textBoxStp_KRV.Size = new Size(133, 23);
+            textBoxStp_KRV.TabIndex = 3;
+            textBoxStp_KRV.Text = "Конец шага:";
             // 
             // textBoxStr_KRV
             // 
@@ -155,15 +155,16 @@
             textBoxStr_KRV.TabIndex = 2;
             textBoxStr_KRV.Text = "Старт шага:";
             // 
-            // textBoxStp_KRV
+            // groupBoxOutPut_KRV
             // 
-            textBoxStp_KRV.Location = new Point(188, 22);
-            textBoxStp_KRV.Multiline = true;
-            textBoxStp_KRV.Name = "textBoxStp_KRV";
-            textBoxStp_KRV.ReadOnly = true;
-            textBoxStp_KRV.Size = new Size(133, 23);
-            textBoxStp_KRV.TabIndex = 3;
-            textBoxStp_KRV.Text = "Конец шага:";
+            groupBoxOutPut_KRV.Controls.Add(dataGridViewFunction_KRV);
+            groupBoxOutPut_KRV.Location = new Point(524, 8);
+            groupBoxOutPut_KRV.Name = "groupBoxOutPut_KRV";
+            groupBoxOutPut_KRV.Size = new Size(597, 329);
+            groupBoxOutPut_KRV.TabIndex = 7;
+            groupBoxOutPut_KRV.TabStop = false;
+            groupBoxOutPut_KRV.Text = "Вывод данных:";
+            groupBoxOutPut_KRV.Enter += groupBoxOutPut_KRV_Enter;
             // 
             // FormMain
             // 

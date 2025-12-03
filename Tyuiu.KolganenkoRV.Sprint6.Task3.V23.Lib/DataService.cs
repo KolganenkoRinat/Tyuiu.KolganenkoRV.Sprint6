@@ -9,15 +9,26 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task3.V23.Lib
             int cols = matrix.GetLength(1);
             int[,] result = (int[,])matrix.Clone();
 
-            // Пузырьковая сортировка строк по второму столбцу
+            // Создаем массив для хранения значений второго столбца и индексов строк
+            int[] secondColumn = new int[rows];
+            for (int i = 0; i < rows; i++)
+            {
+                secondColumn[i] = matrix[i, 1];
+            }
+
+            // Сортируем индексы строк по значениям второго столбца
             for (int i = 0; i < rows - 1; i++)
             {
                 for (int j = 0; j < rows - i - 1; j++)
                 {
-                    // Сравниваем значения во втором столбце
-                    if (result[j, 1] > result[j + 1, 1])
+                    if (secondColumn[j] > secondColumn[j + 1])
                     {
-                        // Меняем строки местами
+                        // Меняем значения во вспомогательном массиве
+                        int temp = secondColumn[j];
+                        secondColumn[j] = secondColumn[j + 1];
+                        secondColumn[j + 1] = temp;
+
+                        // Меняем строки в результирующем массиве
                         SwapRows(result, j, j + 1, cols);
                     }
                 }
@@ -35,6 +46,6 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task3.V23.Lib
                 array[row2, k] = temp;
             }
         }
-    
+
     }
 }

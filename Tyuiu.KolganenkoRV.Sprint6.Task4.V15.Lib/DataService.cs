@@ -14,7 +14,7 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task4.V15.Lib
             double s;
             for (int x = startValue; x <= stopValue; x++)
             {
-                s = Math.Sin(x) + ((2 * x) / 3) - Math.Cos(x) * 4 * x;
+                s = Math.Sin(x) + ((2.0 * x) / 3.0) - Math.Cos(x) * 4 * x;
                 valueArray[count] = Math.Round(s, 2);
                 count++;
             }

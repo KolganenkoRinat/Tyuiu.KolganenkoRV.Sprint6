@@ -1,4 +1,4 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿ using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.KolganenkoRV.Sprint6.Task5.V23.Lib
 {
     public class DataService : ISprint6Task5V23

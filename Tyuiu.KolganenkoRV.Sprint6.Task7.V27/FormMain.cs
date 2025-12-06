@@ -8,8 +8,8 @@ namespace Tyuiu.KolganenkoRV.Sprint6.Task7.V27
         public FormMain()
         {
             InitializeComponent();
-            openFileDialogTask_KRV.Filter = "Значения, разделенные запятыми(*.csv)*.csv|Все файлы(*.*)|*.*";
-            saveFileDialogMatrix_KRV.Filter = "Значения, разделенные запятыми(*.csv)*.csv|Все файлы(*.*)|*.*";
+            openFileDialogTask_KRV.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Все файлы(*.*)|*.*";
+            saveFileDialogMatrix_KRV.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Все файлы(*.*)|*.*";
         }
         DataService ds = new DataService();
         static string openFilePath;
